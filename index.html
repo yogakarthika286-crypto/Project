@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshMart — Grocery Product Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>FreshMart Grocery Store</h1>
+    <p>Fresh produce and daily essentials delivered to your doorstep</p>
+  </header>
+
+  <div class="cart-display">
+    🛒 Cart Items: <span id="cartCount">0</span>
+  </div>
+
+  <div class="container">
+    <div class="search-filter">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search products...                                🔍">
+      </div>
+
+      <div class="filters">
+        <label><input type="checkbox" class="filter" value="fruits"> Fruits</label>
+        <label><input type="checkbox" class="filter" value="vegetables"> Vegetables</label>
+        <label><input type="checkbox" class="filter" value="dairy"> Dairy</label>
+        <label><input type="checkbox" class="filter" value="grocery"> Grocery</label>
+        <label><input type="checkbox" class="filter" value="Chocolates"> Chocolates</label>
+         <label><input type="checkbox" class="filter" value="Tea Time Bakes"> Bakes</label>
+        
+         
+      </div>
+    </div>
+
+    <h2>Our Products</h2>
+
+    <div class="product-grid" id="productGrid">
+      <!-- Product 1 -->
+      <div class="product-card" data-category="fruits" data-name="bananas">
+        <img src="image.png" alt="Bananas">
+        <h3 class="product-title">Bananas (1 kg)</h3>
+        <p class="price" data-price="40">₹40.00</p>
+        <button class="btn add-cart">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card" data-category="vegetables" data-name="tomatoes">
+        <img src="tomoto.jpg" alt="Tomatoes">
+        <h3 class="product-title">Tomatoes (500 g)</h3>
+        <p class="price" data-price="30">₹30.00</p>
+        <button class="btn add-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-category="dairy" data-name="milk">
+        <img src="milk.jpg" alt="Milk">
+        <h3 class="product-title">Fresh Milk (1 L)</h3>
+        <p class="price" data-price="55">₹55.00</p>
+        <button class="btn add-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-category="grocery" data-name="rice">
+        <img src="rice.jpg" alt="Rice">
+        <h3 class="product-title">Premium Rice (5 kg)</h3>
+        <p class="price" data-price="380">₹380.00</p>
+        <button class="btn add-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-category="Chocolates" data-name="Chocolates">
+        <img src="choco.jpg" alt="Rice">
+        <h3 class="product-title">Chocolates</h3>
+        <p class="price" data-price="380">₹380.00</p>
+        <button class="btn add-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-category="Bakes" data-name="bakes">
+        <img src="bakes.jpg" alt="Tea Time Bakes">
+        <h3 class="product-title">Tea Time Bakes</h3>
+        <p class="price" data-price="380">₹380.00</p>
+        <button class="btn add-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-category=" Fresh Chicken" data-name="Grocery">
+        <img src="chicken.jpeg" alt="Fresh Chicken">
+        <h3 class="product-title">Fresh Chicken</h3>
+        <p class="price" data-price="199">₹199.00</p>
+        <button class="btn add-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-category=" Hair Care" data-name="Hair Care">
+        <img src="shampoo.jpg" alt="Hair Care">
+        <h3 class="product-title>Hair Care</h3>
+        <p class="price" data-price="280">₹280.00</p>
+        <button class="btn add-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-category="Fitness Product" data-name="Fitness Product">
+        <img src="fit.jpg" alt="Fitness Product">
+        <h3 class="product-title">Fitness Product</h3>
+        <p class="price" data-price="599">₹599.00</p>
+        <button class="btn add-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-category=" Detergent" data-name="Detergent">
+        <img src="wash.jpg" alt="Detergent">
+        <h3 class="product-title">Detergent</h3>
+        <p class="price" data-price="179">₹179.00</p>
+        <button class="btn add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
